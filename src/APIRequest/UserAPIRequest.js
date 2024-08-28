@@ -1,4 +1,4 @@
-// import {BaseUrl} from '../Helper/config.js'
+import {BaseUrl} from '../Helper/config.js'
 import axios from "axios";
 import toast from "react-hot-toast";
 import {store} from "../Redux/store/store.js";
@@ -7,7 +7,7 @@ import {getEmail, getOtp, getToken, setEmail, setOtp, setUserDetails} from "../H
 import {SetProfile} from "../Redux/state-slice/profile-slice.js";
 
 const axiosHeader={headers:{'token':getToken()}};
-const BaseUrl="https://inventory-management-backend-dun.vercel.app/api/v1"
+// const BaseUrl="https://inventory-management-backend-dun.vercel.app/api/v1"
 export  async function RegistrationRequest(postBody){
    try{
        store.dispatch(showLoader());
